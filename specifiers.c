@@ -1,6 +1,6 @@
 #include "main.h"
 
-char *specifiers(var_list arg_list, const char format)
+char *specifiers(va_list arg_list, const char format)
 {
 	int i;
 	char *str_ptr;
