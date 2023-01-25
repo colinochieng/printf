@@ -5,7 +5,7 @@
 *arg_list - variable number of arguments
 *Return: complete string
 */
-char *spe_string(var_list arg_list)
+char *spe_string(va_list arg_list)
 {
 	char *ptr = va_arg(argu, char*);
 
