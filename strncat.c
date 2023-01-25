@@ -7,7 +7,7 @@
 *Return: joined string
 */
 
-int *_strncat(char *dest, char const *src, int n)
+int _strncat(char *dest, char const *src, int n)
 {
 	int i, j;
 
