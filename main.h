@@ -26,7 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 char *_memset(char *s, char b, unsigned int n);
 int find_len(char *str);
 char *concatinate(char *s1, char *s2);
-int *_strncat(char *dest, char const *src, int n);
+int _strncat(char *dest, char const *src, int n);
 char *specifiers(va_list arg_list, const char format);
 char *spe_char(va_list arg_list);
 char *spe_string(va_list arg_list);
