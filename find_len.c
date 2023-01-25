@@ -6,7 +6,7 @@
 *Return: value of i (string length)
 */
 
-int find_len(char str)
+int find_len(char *str)
 {
 	int i = 0;
 
