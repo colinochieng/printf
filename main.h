@@ -22,6 +22,8 @@ typedef struct check_format
 } spc_holder;
 
 int _printf(const char *format, ...);
+void *_calloc(unsigned int nmemb, unsigned int size);
+char *_memset(char *s, char b, unsigned int n);
 int find_len(char *str);
 char *concatinate(char *s1, char *s2);
 char *specifiers(var_list arg_list, const char format);
