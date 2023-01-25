@@ -7,10 +7,10 @@
 */
 char *spe_string(va_list arg_list)
 {
-	char *ptr = va_arg(argu, char*);
+	char *ptr = va_arg(arg_list, char*);
 
 	if (ptr == NULL)
 		ptr = "(null)";
 
-	return (str);
+	return (ptr);
 }
