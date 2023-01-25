@@ -6,7 +6,7 @@
 *Return: 0
 */
 
-int int _printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	unsigned int i;
 	char *buffer, *str;
