@@ -5,7 +5,7 @@
 *@arg_list: holds a number of arguments to be retrived
 *Return: string of characters
 */
-char *spe_char(var_list arg_list)
+char *spe_char(va_list arg_list)
 {
 	char *str;
 
