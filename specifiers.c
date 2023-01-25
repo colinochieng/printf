@@ -14,7 +14,7 @@ char *specifiers(va_list arg_list, const char format)
 	for (i = 0; i < 3 && value[i].point != format; i++)
 		;
 
-	str_ptr = value[i].func_ptr(format);
+	str_ptr = value[i].func_ptr(arg_list);
 	
 	return (str_ptr);
 }
