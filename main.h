@@ -17,7 +17,7 @@
 */
 typedef struct check_format
 {
-	char *(*func_ptr)(var_list arg_list);
+	char *(*func_ptr)(va_list arg_list);
 	char point;
 } spc_holder;
 
@@ -26,9 +26,10 @@ void *_calloc(unsigned int nmemb, unsigned int size);
 char *_memset(char *s, char b, unsigned int n);
 int find_len(char *str);
 char *concatinate(char *s1, char *s2);
-char *specifiers(var_list arg_list, const char format);
-char *spe_char(var_list arg_list);
-char *spe_string(var_list arg_list);
-char *spe_percent(var_list arg_list);
+char *_strncat(char *dest, char *src, int n);
+char *specifiers(va_list arg_list, const char format);
+char *spe_char(va_list arg_list);
+char *spe_string(va_list arg_list);
+char *spe_percent(va_list arg_list);
 
 #endif /*MAIN_H*/
