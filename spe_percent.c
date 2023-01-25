@@ -5,7 +5,7 @@
 *@arg_list - variable arguments
 *Return: %
 */
-char *spe_percent(var_list arg_list)
+char *spe_percent(va_list arg_list)
 {
 	char *ptr;
 
