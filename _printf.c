@@ -16,7 +16,7 @@ int int _printf(const char *format, ...)
 	{
 		va_start(arg_list, format);
 
-		buffer = calloc(1045, sizeof char);
+		buffer = calloc(1045, sizeof(char));
 
 		if (buffer == NULL)
 			return (-1);
