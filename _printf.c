@@ -8,13 +8,13 @@
 
 int _printf(const char *format, ...)
 {
+	va_list arg;
 	const char *c;
 	register int iter = 0;
 	int (*ptr_f)(va_list, indicator *);
 	indicator f = {0, 0, 0};
 	indicator *f_ptr;
 	f_ptr = &f;
-	va_list arg;
 
 	va_start(arg, format);
 	if (!format || (format[0] == '%' && !format[1]))
@@ -49,7 +49,7 @@ int _printf(const char *format, ...)
 		}
 		else
 		{
-			iter += _putchar(*p);
+			iter += _putchar(*c);
 		}
 		c++;
 	}
