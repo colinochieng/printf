@@ -1,4 +1,4 @@
-#include "main.c"
+#include "main.h"
 
 /**
 *print_percent - function to output percent
