@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 *flags - activates flags on _printf
 *@f: flag character
