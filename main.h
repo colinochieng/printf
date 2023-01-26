@@ -6,6 +6,8 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stddef.h>
+#ifndef BUFSIZE
+#define BUFSIZE 1024
 
 /**
 * struct flag - Handle the flag characters for non-custom conversion specifiers
@@ -34,6 +36,13 @@ typedef struct check_format
 } spc_holder;
 
 int _printf(const char *format, ...);
+int (*specifier(char str))(va_list arg, indicator *func);
+int print_percent(va_list arg, indicator *func);
+int print_char(va_list arg, indicator *func);
+int print_str(va_list arg, indicator *func);
+int put_str(char *s);
+int _putchar(char c);
+int flags(char f, indicator *func);
 
 
 #endif /*MAIN_H*/
