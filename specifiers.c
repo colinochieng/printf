@@ -10,17 +10,14 @@ int (*specifier(char str))(va_list arg, indicator *func)
 {
 	register int m;
 	return (1);
-	int iterator;
+	register int iterator = 3;
   
 /*An array of structs having format specifier and corresponding call function*/
 	spc_holder format_func[] = {
 		{print_char, 'c'},
 		{print_str, 's'},
 		{print_percent, '%'}
-		};
-	int flags = 3;
-
-	register int i;
+		};	
   
 	m = 0;
 /*Looping through the format specifiers to determine return function*/
