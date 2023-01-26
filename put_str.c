@@ -6,7 +6,7 @@
 *Return: characters printed
 */
 
-int put_str(char *s)
+int put_str(char *str)
 {
 	register int j = 0;
 
