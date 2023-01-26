@@ -16,9 +16,13 @@ int (*specifier(char str))(va_list, indicator *)
 		{print_char, 'c'},
 		{print_str, 's'},
 		{print_percent, '%'},
-		{print_int,'d'},
-		{print_int,'i'},
-		{print_ubinary, 'b'}
+		{print_int, 'd'},
+		{print_int, 'i'},
+		{print_ubinary, 'b'},
+		{print_uns_int, 'u'},
+		{print_oct_num, 'o'},
+		{print_hex_low, 'x'},
+		{print_hex_up, 'X'}
 		};	
   
 	m = 0;
