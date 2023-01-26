@@ -30,18 +30,18 @@ typedef struct flag
 */
 typedef struct check_format
 {
-	char (*func_ptr)(va_list arg_list, indicator *ptr);
+	char (*func_ptr)(va_list arg_list, indicator *func_ptr);
 	char point;
 } spc_holder;
 
 int _printf(const char *format, ...);
-int (*specifier(char str))(va_list arg, indicator *func);
-int print_percent(va_list arg, indicator *func);
-int print_char(va_list arg, indicator *func);
-int print_str(va_list arg, indicator *func);
+int (*specifier(char str))(va_list, indicator *);
+int print_percent(va_list arg, indicator *func_ptr);
+int print_char(va_list arg, indicator *func_ptr);
+int print_str(va_list arg, indicator *func_ptr);
 int put_str(char *s);
 int _putchar(char c);
-int flags(char f, indicator *func);
+int flags(char f, indicator *func_ptr);
 
 
 #endif /*MAIN_H*/
