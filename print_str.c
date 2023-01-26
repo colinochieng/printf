@@ -8,8 +8,8 @@
 */
 int print_str(va_list arg, indicator *func)
 {
-	(void)func;
 	char *get_str(arg, char *);
+	(void)func;
 
 	if (get_str == NULL)
 		get_str = "(null)";
