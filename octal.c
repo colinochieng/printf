@@ -6,7 +6,7 @@
 *@func_ptr: struct pointer
 *Return: total printed characters
  */
-int print_oct_num(va_list arg, indicator *func_ptr);
+int print_oct_num(va_list arg, indicator *func_ptr)
 {
 	unsigned int num = va_arg(arg, unsigned int);
 	char *ptr = modify(num, 8, 0);
