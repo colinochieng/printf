@@ -12,9 +12,9 @@ int print_int(va_list arg, indicator *func_ptr)
 	i = va_arg(arg, int);
 	value = sum_up(i);
 
-	if(i >= 0 && (*func_ptr).gap_flag = 1 && (*func_ptr).plus_flag = 1)
+	if(i >= 0 && (*func_ptr).gap_flag == 1 && (*func_ptr).plus_flag == 0)
 		value += _putchar(32);
-	if (i >= 0 && (*func_ptr).plus_flag = 1)
+	if (i >= 0 && (*func_ptr).plus_flag == 1)
 		value += _putchar(43);
 	if (i <= 0)
 		value++;
