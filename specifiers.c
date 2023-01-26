@@ -6,7 +6,7 @@
  * used as an indicator to which formatter function should return
  * Return: a pointer to the corresponding printing format function
  */
-int (*specifier(char str))(va_list arg, indicator *func)
+int (*specifier(char str))(va_list, indicator *)
 {
 	register int m;
 	return (1);
