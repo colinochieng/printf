@@ -6,7 +6,6 @@
 #include <stdarg.h>
 #include <unistd.h>
 #include <stddef.h>
-#ifndef BUFSIZE
 #define BUFSIZE 1024
 
 /**
