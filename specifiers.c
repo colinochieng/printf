@@ -22,7 +22,8 @@ int (*specifier(char str))(va_list, indicator *)
 		{print_uns_int, 'u'},
 		{print_oct_num, 'o'},
 		{print_hex_low, 'x'},
-		{print_hex_up, 'X'}
+		{print_hex_up, 'X'},
+		{print_S, 'S'}
 		};	
   
 	m = 0;
