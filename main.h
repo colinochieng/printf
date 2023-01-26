@@ -52,5 +52,6 @@ int print_oct_num(va_list arg, indicator *func_ptr);
 int print_hex_low(va_list arg, indicator *func_ptr);
 int print_hex_up(va_list arg, indicator *func_ptr);
 int print_S(va_list arg, indicator *func_ptr);
+int address(va_list arg, indicator *func_ptr);
 
 #endif /*MAIN_H*/
