@@ -12,17 +12,17 @@ int flags(char f, indicator *func)
 
 	if (f == '+')
 	{
-		(*func).plus = 1;
+		(*func).plus_flag = 1;
 		m = 1;
 	}
 	else if (f == ' ')
 	{
-		(*func).space = 1;
+		(*func).gap_flag = 1;
 		m = 1;
 	}
 	else if (f == '#')
 	{
-		(*func).hash = 1;
+		(*func).hash_flag = 1;
 		m = 1;
 	}
 
