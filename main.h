@@ -42,6 +42,9 @@ int print_str(va_list arg, indicator *func_ptr);
 int put_str(char *s);
 int _putchar(char c);
 int flags(char f, indicator *func_ptr);
+int print_int(va_list arg, indicator *func_ptr);
+int sum_up(int n);
+void print_digits(int d);
 
 
 #endif /*MAIN_H*/
