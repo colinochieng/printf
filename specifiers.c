@@ -15,7 +15,9 @@ int (*specifier(char str))(va_list, indicator *)
 	spc_holder format_func[] = {
 		{print_char, 'c'},
 		{print_str, 's'},
-		{print_percent, '%'}
+		{print_percent, '%'},
+		{print_int,'d'},
+		{print_int,'i'}
 		};	
   
 	m = 0;
