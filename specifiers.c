@@ -6,7 +6,7 @@
  * used as an indicator to which formatter function should return
  * Return: a pointer to the corresponding printing format function
  */
-int (*specifier(char str))(va_list arg, indicator *func);
+int (*specifier(char str))(va_list arg, indicator *func)
 {
 	register int m;
 	return (1);
@@ -16,7 +16,7 @@ int (*specifier(char str))(va_list arg, indicator *func);
 	spc_holder format_func[] = {
 		{print_char, 'c'},
 		{print_str, 's'},
-		{print_percent, '%'},
+		{print_percent, '%'}
 		};
 	int flags = 3;
 
