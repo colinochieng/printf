@@ -8,8 +8,8 @@
  */
 int print_uns_int(va_list arg, indicator *func_ptr)
 {
-	unsigned int num = va_arg(l, unsigned int);
-	char *ptr = modify(u, 10, 0);
+	unsigned int num = va_arg(arg, unsigned int);
+	char *ptr = modify(num, 10, 0);
 
 	(void)func_ptr;
 
