@@ -45,6 +45,7 @@ int flags(char f, indicator *func_ptr);
 int print_int(va_list arg, indicator *func_ptr);
 int sum_up(int n);
 void print_digits(int d);
-
+int print_ubinary(va_list arg, indicator *func_ptr);
+char *modify(unsigned long int num, int base, int lower);
 
 #endif /*MAIN_H*/
