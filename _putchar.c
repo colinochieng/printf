@@ -14,7 +14,7 @@ int _putchar(char c)
 	{
 		write(1, &buffer, m);
 
-		i = 0;
+		m = 0;
 	}
 	if (c != EOF)
 	{
