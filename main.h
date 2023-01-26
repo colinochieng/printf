@@ -47,5 +47,9 @@ int sum_up(int n);
 void print_digits(int d);
 int print_ubinary(va_list arg, indicator *func_ptr);
 char *modify(unsigned long int num, int base, int lower);
+int print_uns_int(va_list arg, indicator *func_ptr);
+int print_oct_num(va_list arg, indicator *func_ptr);
+int print_hex_low(va_list arg, indicator *func_ptr);
+int print_hex_up(va_list arg, indicator *func_ptr);
 
 #endif /*MAIN_H*/
