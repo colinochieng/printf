@@ -6,7 +6,7 @@
 *@func: points to struct
 *Return: string
 */
-int print_str(va_list arg, flags_t *func)
+int print_str(va_list arg, indicator *func)
 {
 	(void)func;
 	char *get_str(arg, char *);
