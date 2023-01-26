@@ -8,42 +8,54 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int i;
-	char *buffer, *str;
-	va_list arg_list;
+	const char *c;
+	register int iter = 0;
+	int (*ptr_f)(va_list, indicator *);
+	indicator f = {0, 0, 0};
+	indicator *f_ptr;
+	f_ptr = &f;
 
-	if (format != NULL)
+	va_list arg;
+
+	va_list(arg, format);
+	if (!format || (format[0] == '%' && !format[1]))
+		return (-1);
+	if (format[0] == '%' && format[1] == ' ' && !format[2])
+		return (-1);
+
+	c = format;
+
+	while (*c)
 	{
-		va_start(arg_list, format);
-
-		buffer = calloc(1045, sizeof(char));
-
-		if (buffer == NULL)
-			return (-1);
-
-		for (i = 0; format && format[i] != ' '; i++)
+		if (*c == '%')
 		{
-			if (format[0] == '%' && format[1] == '\0')
-				return (-1);
-
-			i = _strncat(buffer, format, i);
-			if (format[i] == '%')
+			p++;
+			if (*c == '%')
 			{
-				i++;
-				str = specifiers(arg_list, format[i]);
-				concatinate(buffer, str);
+				iter += _putchar(37);
+				continue;
 			}
-			if (format[i] != '\0')
-				i++;
-		}
-		i = find_len(buffer);
-		write(1, buffer, i);
-		va_end(arg_list);
-		free(buffer);
-		return (i);
-	}
-	return (-1);
-}
+			while (flags(*p, f_ptr))
+			       c++;
 
-			
-		
+			ptr_f = specifier(*c);
+			if (ptr_f)
+			{
+				iter += ptr_f(arg, f_ptr);
+			}
+			else
+			{
+				iter += _printf("%%%c", *c);
+			}
+		}
+		else
+		{
+			iter += _putchar(*p);
+		}
+		c++;
+	}
+
+	_putchar(-1);
+	va_end(arg);
+	return (iter);
+}
