@@ -14,10 +14,9 @@ int _printf(const char *format, ...)
 	indicator f = {0, 0, 0};
 	indicator *f_ptr;
 	f_ptr = &f;
-
 	va_list arg;
 
-	va_list(arg, format);
+	va_start(arg, format);
 	if (!format || (format[0] == '%' && !format[1]))
 		return (-1);
 	if (format[0] == '%' && format[1] == ' ' && !format[2])
@@ -35,7 +34,7 @@ int _printf(const char *format, ...)
 				iter += _putchar(37);
 				continue;
 			}
-			while (flags(*p, f_ptr))
+			while (flags(*c, f_ptr))
 			       c++;
 
 			ptr_f = specifier(*c);
