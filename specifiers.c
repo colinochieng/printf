@@ -17,7 +17,8 @@ int (*specifier(char str))(va_list, indicator *)
 		{print_str, 's'},
 		{print_percent, '%'},
 		{print_int,'d'},
-		{print_int,'i'}
+		{print_int,'i'},
+		{print_ubinary, 'b'}
 		};	
   
 	m = 0;
