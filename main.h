@@ -3,10 +3,22 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 #include <stdarg.h>
 #include <unistd.h>
 #include <stddef.h>
+
+/**
+* struct flag - Handle the flag characters for non-custom conversion specifiers
+*@plus_flag: +
+*@gap_flag: space
+*@hash_flag: #
+*/
+typedef struct flag
+{
+	int plus_flag;
+	int hash_flag;
+	int gap_flag;
+} indicator;
 
 /**
 *struct check_format - structure for switching format specifiers
@@ -17,19 +29,11 @@
 */
 typedef struct check_format
 {
-	char *(*func_ptr)(va_list arg_list);
+	char (*func_ptr)(va_list arg_list, indicator *ptr);
 	char point;
 } spc_holder;
 
 int _printf(const char *format, ...);
-void *_calloc(unsigned int nmemb, unsigned int size);
-char *_memset(char *s, char b, unsigned int n);
-int find_len(char *str);
-char *concatinate(char *s1, char *s2);
-int _strncat(char *dest, char const *src, int n);
-char *specifiers(va_list arg_list, const char format);
-char *spe_char(va_list arg_list);
-char *spe_string(va_list arg_list);
-char *spe_percent(va_list arg_list);
+
 
 #endif /*MAIN_H*/
