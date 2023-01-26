@@ -30,7 +30,7 @@ typedef struct flag
 */
 typedef struct check_format
 {
-	char (*func_ptr)(va_list arg_list, indicator *func_ptr);
+	int (*func_ptr)(va_list arg_list, indicator *func_ptr);
 	char point;
 } spc_holder;
 
