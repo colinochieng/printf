@@ -13,10 +13,10 @@ int address(va_list arg, indicator *func_ptr)
 	register int digits = 0;
 	(void)func_ptr;
 
-	if (add == NULL)
+	if (!add)
 		return (put_str("(nil)"));
 
-	ptr = modify(p, 16, 1);
+	ptr = modify(add, 16, 1);
 	digits += put_str("0x");
 	digits += put_str(ptr);
 
