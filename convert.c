@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * convert - converts number and base into string
- * @num: input number
- * @base: input base
- * @lowercase: flag if hexa values need to be lowercase
- * Return: result string
+ * convert - modify arguments passed to hexadecimal
+ * @num: number
+ * @base: base
+ * @lower: checks whether hexa values should be lowercase or uppercase
+ * Return: hexadecimal
  */
 char *modify(unsigned long int num, int base, int lower)
 {
