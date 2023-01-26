@@ -11,7 +11,7 @@
 int print_S(va_list arg, indicator *func_ptr)
 {
 	int m, digits = 0;
-	char *result, *ptr = va_arg(l, char *);
+	char *result, *ptr = va_arg(arg, char *);
 	(void)func_ptr;
 
 	if (ptr == NULL)
@@ -23,7 +23,7 @@ int print_S(va_list arg, indicator *func_ptr)
 		{
 			put_str("\\x");
 			digits += 2;
-			res = modify(ptr[m], 16, 0);
+			result = modify(ptr[m], 16, 0);
 			if (!result[1])
 				digits += _putchar('0');
 			digits += put_str(result);
