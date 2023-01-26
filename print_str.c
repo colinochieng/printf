@@ -8,7 +8,7 @@
 */
 int print_str(va_list arg, indicator *func)
 {
-	char *get_str(arg, char *);
+	char *get_str = va_arg(arg, char *);
 	(void)func;
 
 	if (get_str == NULL)
