@@ -10,7 +10,7 @@ int rev(va_list arg, indicator *func_ptr)
 	char *str =  va_arg(arg, char *);
 	int i, digits, j = 0;
 
-	void(func_ptr);
+	(void)func_ptr;
 	if (str == NULL)
 		str = "(nil)";
 
