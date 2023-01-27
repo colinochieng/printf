@@ -44,6 +44,7 @@ int _putchar(char c);
 int flags(char f, indicator *func_ptr);
 int print_int(va_list arg, indicator *func_ptr);
 int sum_up(int n);
+int _strlen(char *s);
 void print_digits(int d);
 int print_ubinary(va_list arg, indicator *func_ptr);
 char *modify(unsigned long int num, int base, int lower);
@@ -53,5 +54,7 @@ int print_hex_low(va_list arg, indicator *func_ptr);
 int print_hex_up(va_list arg, indicator *func_ptr);
 int print_S(va_list arg, indicator *func_ptr);
 int address(va_list arg, indicator *func_ptr);
+int rot13(va_list arg, indicator *func_ptr);
+int rev(va_list arg);
 
 #endif /*MAIN_H*/
