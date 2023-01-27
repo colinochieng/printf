@@ -55,6 +55,6 @@ int print_hex_up(va_list arg, indicator *func_ptr);
 int print_S(va_list arg, indicator *func_ptr);
 int address(va_list arg, indicator *func_ptr);
 int rot13(va_list arg, indicator *func_ptr);
-int rev(va_list arg, indicator *func_ptr);
+int rev(va_list arg);
 
 #endif /*MAIN_H*/
