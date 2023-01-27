@@ -11,6 +11,7 @@ int rev(va_list arg,  indicator *func_ptr)
 	int i, digits, j = 0;
 
 	str = va_arg(arg, char *);
+
 	void(func_ptr);
 
 	if (str == NULL)
