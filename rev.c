@@ -19,7 +19,7 @@ int rev(va_list arg)
 
 	while (j >= 0)
 	{
-		_putchar(s[j]);
+		_putchar(str[j]);
 		j--;
 		digits++;
 	}
