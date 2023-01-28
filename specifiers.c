@@ -10,7 +10,7 @@ int (*specifier(char str))(va_list, indicator *)
 {
 	register int m;
 	int iterator = 14;
-  
+
 /*An array of structs having format specifier and corresponding call function*/
 	spc_holder format_func[] = {
 		{print_char, 'c'},
@@ -26,9 +26,9 @@ int (*specifier(char str))(va_list, indicator *)
 		{print_S, 'S'},
 		{address, 'p'},
 		{rev, 'r'},
-		{rot13, 'R'}		
-		};	
-  
+		{rot13, 'R'}	
+		};
+
 	m = 0;
 /*Looping through the format specifiers to determine return function*/
 	while (m < iterator)
