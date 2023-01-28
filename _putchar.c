@@ -10,13 +10,13 @@ int _putchar(char c)
 	static int m;
 	static char buffer[BUFSIZE];
 
-	if (m >= BUFSIZE || c == EOF)
+	if (m >= BUFSIZE || c == -1)
 	{
 		write(1, &buffer, m);
 
 		m = 0;
 	}
-	if (c != EOF)
+	if (c != -1)
 	{
 		buffer[m] = c;
 		m++;
