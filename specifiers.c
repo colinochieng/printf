@@ -26,7 +26,7 @@ int (*specifier(char str))(va_list, indicator *)
 		{print_S, 'S'},
 		{address, 'p'},
 		{rev, 'r'},
-		{rot13, 'R'}	
+		{rot13, 'R'}
 		};
 
 	m = 0;
