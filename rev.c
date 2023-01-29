@@ -13,7 +13,7 @@ int rev(va_list arg, indicator *func_ptr)
 
 	(void)func_ptr;
 	if (!str)
-		str = "(null)";
+		;
 
 	i = _strlen(str);
 	j = i - 1;
