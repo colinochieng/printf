@@ -2,7 +2,8 @@
 
 /**
 *rev - reverses a string
-*@: string arguments
+*@arg: string arguments
+*@func_ptr: struct pointer
 *Return: total printed characters
 */
 int rev(va_list arg, indicator *func_ptr)
